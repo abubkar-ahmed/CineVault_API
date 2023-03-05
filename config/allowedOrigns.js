@@ -1,5 +1,5 @@
 const allowedOrigns = [
-    'http://127.0.0.1:5173'
+    'https://cine-vault.netlify.app'
 ]
 
 module.exports = allowedOrigns ;
