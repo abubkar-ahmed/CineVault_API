@@ -60,7 +60,7 @@ const getAllData = async (req , res) => {
                 return {              
                     id: e.id,
                     title: e.title || e.name,
-                    mediaType: e.mediaType,
+                    mediaType: 'tv',
                     poster: `${imgURL}${e.poster_path}`,
                     date: e.release_date
                     ? e?.release_date.split('-')[0]
@@ -72,7 +72,7 @@ const getAllData = async (req , res) => {
                 return {              
                     id: e.id,
                     title: e.title || e.name,
-                    mediaType: e.mediaType,
+                    mediaType: 'movie',
                     poster: `${imgURL}${e.poster_path}`,
                     date: e.release_date
                     ? e?.release_date.split('-')[0]
